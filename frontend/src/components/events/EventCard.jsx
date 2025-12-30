@@ -22,8 +22,8 @@ const EventCard = ({ event }) => {
                 <h3>{event.title}</h3>
                 <p className="event-desc">{event.description.substring(0, 100)}...</p>
                 <div className="event-details">
-                    <span>📅 {formatDate(event.date)}</span>
-                    <span>📍 {event.location}</span>
+                    <span> {formatDate(event.date)}</span>
+                    <span>{event.location}</span>
                     <span className={spotsLeft > 0 ? 'spots-available' : 'spots-full'}>
                         {spotsLeft > 0 ? `${spotsLeft} spots left` : 'Event Full'}
                     </span>

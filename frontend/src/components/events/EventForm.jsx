@@ -108,7 +108,7 @@ const EventForm = () => {
             disabled={generating}
             className="btn-ai"
           >
-            {generating ? '✨ Generating...' : '✨ AI Generate'}
+            {generating ? 'Generating...' : 'AI Generate'}
           </button>
         </div>
 

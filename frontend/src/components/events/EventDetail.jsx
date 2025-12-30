@@ -79,9 +79,9 @@ const EventDetail = () => {
         <h1>{event.title}</h1>
         <p className="event-organizer">Organized by {event.creator.name}</p>
         <div className="event-meta">
-          <span>📅 {new Date(event.date).toLocaleString()}</span>
-          <span>📍 {event.location}</span>
-          <span>👥 {event.attendeeCount} / {event.capacity} attendees</span>
+          <span>{new Date(event.date).toLocaleString()}</span>
+          <span>{event.location}</span>
+          <span>{event.attendeeCount} / {event.capacity} attendees</span>
         </div>
         <p className="event-description">{event.description}</p>
         
